@@ -11,8 +11,24 @@
 </head>
 <body>
 
-    <form id="form-container">
-        Name: Email: Comment: Receive email updates? Submit
+    <form id="form-container" action="/some-url" method="post">
+        <div>
+        <label for="name">Name:</label><br>
+        <input class="justifyInput" type="text" id="name">
+        </div>
+        <div>
+        <label for="email">Email:</label><br>
+        <input class="justifyInput" type="email" id="email">
+        </div>
+        <div>
+        <label for="comment">Comment:</label><br>
+        <textarea id="comment" rows="10" cols="20"></textarea>
+        </div>
+        <div class="flexB">
+        <label class="italic" for="recieveInfo">Recieve email updates?</label>
+        <input type="radio" id="recieveInfo" value="yesRecieveInfo">
+        </div>
+        <button class=submitBn type="submit">Submit</button>
     </form>
 
 </body>
